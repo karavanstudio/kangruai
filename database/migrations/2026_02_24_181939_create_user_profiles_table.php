@@ -15,13 +15,13 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->enum('education_level', [
-                'SD',
-                'SMP',
-                'SMA',
-                'SMK',
-                'KULIAH',
-                'BEKERJA',
-                'TIDAK BEKERJA',
+                'ELEMENTARY SCHOOL',
+                'JUNIOR HIGH SCHOOL',
+                'SENIOR HIGH SCHOOL',
+                'VOCATIOANL SCHOOL',
+                'UNIVERSITY',
+                'WORK',
+                'UNEMPLOYMENT',
             ]);
             $table->string('major')->nullable();
             $table->string('job_title')->nullable();

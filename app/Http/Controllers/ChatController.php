@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Adaptation\AdaptationExperienceRecommendation;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
 
 use App\Services\AI\GeminiService;
 use App\Models\Chat\ChatConversation;
